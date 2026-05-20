@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Beauty Corner | Timeless Elegance, Naturally Yours</title>
+    <meta name="description" content="Premium wig installation, customization, and hair treatment services. Nature's Beauty Corner - Timeless Elegance, Naturally Yours.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nb-black': '#0a0a0a',
+                        'nb-dark': '#111111',
+                        'nb-grey': '#1a1a1a',
+                        'nb-charcoal': '#262626',
+                        'nb-stone': '#404040',
+                        'nb-light': '#a3a3a3',
+                        'nb-white': '#f5f5f5',
+                        'nb-cream': '#faf9f7',
+                        'nb-warm': '#f0eeeb',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Cormorant Garamond', 'serif'],
+                        'display': ['Playfair Display', 'serif'],
+                        'script': ['Great Vibes', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="Assets/Logo-Photoroom.png" alt="Nature's Beauty Corner Logo" class="h-20 w-auto object-contain">
+                    <div class="hidden sm:block">
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#about" class="text-sm tracking-widest uppercase font-semibold text-nb-stone hover:text-nb-black transition-colors duration-300 relative group">
+                        About
+                        <span class="absolute -bottom-1 left-0 w-0 h-px bg-nb-black transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#services" class="text-sm tracking-widest uppercase font-semibold text-nb-stone hover:text-nb-black transition-colors duration-300 relative group">
+                        Services
+                        <span class="absolute -bottom-1 left-0 w-0 h-px bg-nb-black transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#pricelist" class="text-sm tracking-widest uppercase font-semibold text-nb-stone hover:text-nb-black transition-colors duration-300 relative group">
+                        Price List
+                        <span class="absolute -bottom-1 left-0 w-0 h-px bg-nb-black transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#gallery" class="text-sm tracking-widest uppercase font-semibold text-nb-stone hover:text-nb-black transition-colors duration-300 relative group">
+                        Gallery
+                        <span class="absolute -bottom-1 left-0 w-0 h-px bg-nb-black transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#portfolio" class="text-sm tracking-widest uppercase font-semibold text-nb-stone hover:text-nb-black transition-colors duration-300 relative group">
+                        Portfolio
+                        <span class="absolute -bottom-1 left-0 w-0 h-px bg-nb-black transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </div>
+
+                <button id="mobile-btn" class="md:hidden text-nb-black p-2">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full glass border-t border-black/5">
+            <div class="px-6 py-8 flex flex-col gap-6">
+                <a href="#about" class="text-sm tracking-widest uppercase text-nb-stone">About</a>
+                <a href="#services" class="text-sm tracking-widest uppercase text-nb-stone">Services</a>
+                <a href="#gallery" class="text-sm tracking-widest uppercase text-nb-stone">Gallery</a>
+                <a href="#experience" class="text-sm tracking-widest uppercase text-nb-stone">Experience</a>
+                <a href="#contact" class="text-sm tracking-widest uppercase text-nb-black border border-nb-black px-6 py-3 text-center rounded-full">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION WITH VIDEO BACKGROUND ===== -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+        <!-- Video Background -->
+        <div class="hero-video-container">
+            <iframe
+                src="https://www.youtube.com/embed/NQFY4tV1y6s?autoplay=1&mute=1&playsinline=1&loop=1&playlist=NQFY4tV1y6s&controls=0&disablekb=1&fs=0&iv_load_policy=3&rel=0&modestbranding=1"
+                title="The Art of Installation background video"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                aria-hidden="true"
+                tabindex="-1">
+            </iframe>
+        </div>
+
+        <!-- Gradient Overlay for text readability -->
+        <div class="hero-video-overlay"></div>
+
+        <!-- Floating Blobs behind content -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-gray-200/40 to-gray-300/30 rounded-full filter blur-3xl animate-blob z-[2]"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-stone-200/30 to-gray-200/20 rounded-full filter blur-3xl animate-blob-slow z-[2]"></div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center pt-20">
+            <div class="reveal-text" id="hero-badge">
+                <span class="inline-flex items-center gap-2 px-4 py-2 glass rounded-full text-xs tracking-widest uppercase text-nb-stone mb-8">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    Now Accepting Bookings
+                </span>
+            </div>
+
+            <h1 class="font-script text-7xl md:text-9xl lg:text-[10rem] text-nb-black mb-4 reveal-text drop-shadow-sm" id="hero-welcome">Welcome</h1>
+
+            <h2 class="font-display text-3xl md:text-5xl lg:text-6xl text-nb-black tracking-wider uppercase mb-6 reveal-text drop-shadow-sm" id="hero-title">
+                Nature's Beauty Corner
+            </h2>
+
+            <p class="font-serif italic text-xl md:text-2xl text-nb-stone mb-12 reveal-text" id="hero-tagline">
+                Timeless Elegance, Naturally Yours.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal-text" id="hero-cta">
+                <a href="#services" class="btn-shine px-8 py-4 bg-nb-black text-white text-sm tracking-widest uppercase font-medium rounded-full hover:bg-nb-charcoal transition-all duration-300 shadow-lg shadow-black/20">
+                    Explore Services
+                </a>
+                <a href="#contact" class="px-8 py-4 glass text-nb-black text-sm tracking-widest uppercase font-medium rounded-full hover:bg-white/90 transition-all duration-300 border border-black/10">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative py-24 lg:py-32 mesh-white overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-100/50 to-transparent"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative reveal-text">
+                    <div class="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-black/10">
+                        <img src="Assets/Ndalo.jpeg" 
+                             alt="Elegant hair styling" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 glass rounded-2xl p-6 shadow-xl max-w-xs">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-nb-black flex items-center justify-center">
+                                <i class="fa-solid fa-crown text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="font-display text-lg text-nb-black">Premium Care</p>
+                                <p class="text-xs text-nb-stone">Every strand matters</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -top-8 -left-8 w-full h-full bg-gradient-to-br from-gray-200 to-stone-200 rounded-3xl"></div>
+                </div>
+
+                <div class="reveal-text">
+                    <p class="font-script text-5xl text-nb-black mb-2">Our Story</p>
+                    <h3 class="font-display text-3xl md:text-4xl text-nb-black tracking-wider uppercase mb-6">Crafted with Passion</h3>
+                    <div class="w-20 h-px bg-gradient-to-r from-nb-black to-transparent mb-8"></div>
+                    <p class="text-nb-stone leading-relaxed mb-6 text-lg">
+                        At Nature's Beauty Corner, we believe every woman deserves to feel confidently elegant. Specializing in premium wig installations, customizations, and revitalizing treatments, we transform your vision into reality.
+                    </p>
+                    <p class="text-nb-stone leading-relaxed mb-10">
+                        From basic installations to intricate frontal ponytails, our meticulous attention to detail ensures a natural, flawless finish every time. We treat every strand with the care it deserves.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass rounded-xl p-5">
+                            <i class="fa-solid fa-wand-magic-sparkles text-nb-black mb-3"></i>
+                            <p class="font-medium text-nb-black text-sm">Expert Stylists</p>
+                            <p class="text-xs text-nb-stone mt-1">Trained in latest techniques</p>
+                        </div>
+                        <div class="glass rounded-xl p-5">
+                            <i class="fa-solid fa-leaf text-nb-black mb-3"></i>
+                            <p class="font-medium text-nb-black text-sm">Natural Results</p>
+                            <p class="text-xs text-nb-stone mt-1">Undetectable finishes</p>
+                        </div>
+                        <div class="glass rounded-xl p-5">
+                            <i class="fa-solid fa-droplet text-nb-black mb-3"></i>
+                            <p class="font-medium text-nb-black text-sm">Premium Products</p>
+                            <p class="text-xs text-nb-stone mt-1">Only the best for your hair</p>
+                        </div>
+                        <div class="glass rounded-xl p-5">
+                            <i class="fa-solid fa-heart text-nb-black mb-3"></i>
+                            <p class="font-medium text-nb-black text-sm">Loyal Clients</p>
+                            <p class="text-xs text-nb-stone mt-1">They keep coming back</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <div id="services"></div>
+
+    <!-- ===== PRICE LIST SECTION ===== -->
+    <section id="pricelist" class="relative py-24 lg:py-32 bg-nb-black overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,_rgba(60,60,60,0.4)_0%,_transparent_50%)]"></div>
+        <div class="absolute -top-40 right-0 w-96 h-96 bg-gray-800 rounded-full filter blur-3xl opacity-30"></div>
+        <div class="absolute -bottom-40 left-0 w-96 h-96 bg-stone-800 rounded-full filter blur-3xl opacity-30"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20 reveal-text">
+                <p class="font-script text-6xl md:text-7xl text-white mb-4">Price List</p>
+                <div class="w-24 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto mt-6"></div>
+                <p class="text-white/50 mt-6 max-w-lg mx-auto">Transparent pricing for all our premium hair services. Quality you can trust at rates you can afford.</p>
+            </div>
+
+            <!-- Card 1: Wig Installation -->
+            <div class="bg-nb-dark rounded-3xl overflow-hidden shadow-2xl shadow-black/50 mb-12 reveal-text border border-white/5">
+                <div class="grid lg:grid-cols-2 gap-0">
+                    <div class="relative overflow-hidden aspect-[4/5] lg:aspect-auto lg:min-h-[500px]">
+                        <img src="Assets/WhatsApp%20Image%202026-05-19%20at%2020.25.44.jpeg" alt="Wig Installation" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/30"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-xs tracking-widest uppercase text-white font-semibold">Most Popular</span>
+                        </div>
+                    </div>
+                    <div class="p-8 lg:p-12 flex flex-col justify-center">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center border border-white/10">
+                                <i class="fa-solid fa-scissors text-white text-sm"></i>
+                            </div>
+                            <h4 class="font-display text-2xl text-white tracking-wider uppercase">Wig Installation</h4>
+                        </div>
+                        <div class="space-y-0">
+                            <div class="flex justify-between items-center py-4 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                <div>
+                                    <span class="text-white font-medium">Basic Wig Installation</span>
+                                    <p class="text-xs text-white/40 mt-0.5">Standard lace application</p>
+                                </div>
+                                <span class="font-display text-2xl text-white">R200</span>
+                            </div>
+                            <div class="flex justify-between items-center py-4 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                <div>
+                                    <span class="text-white font-medium">Basic Frontal Ponytail</span>
+                                    <p class="text-xs text-white/40 mt-0.5">Sleek ponytail style</p>
+                                </div>
+                                <span class="font-display text-2xl text-white">R250</span>
+                            </div>
+                            <div class="flex justify-between items-center py-4 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                <div>
+                                    <span class="text-white font-medium">Wig Installation + Style</span>
+                                    <p class="text-xs text-white/40 mt-0.5">Install with custom styling</p>
+                                </div>
+                                <span class="font-display text-2xl text-white">+R300</span>
+                            </div>
+                            <div class="flex justify-between items-center py-4 px-3 hover:bg-white/5 transition-all rounded-lg">
+                                <div>
+                                    <span class="text-white font-medium">Frontal Ponytail + Style</span>
+                                    <p class="text-xs text-white/40 mt-0.5">Ponytail with full styling</p>
+                                </div>
+                                <span class="font-display text-2xl text-white">+R350</span>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-white/10">
+                            <a href="#contact" class="btn-shine inline-flex items-center gap-2 px-6 py-3 bg-white text-nb-black text-sm tracking-widest uppercase rounded-full hover:bg-white/90 transition-all duration-300">
+                                Book Installation <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Wash & Laundry -->
+            <div class="bg-nb-dark rounded-3xl overflow-hidden shadow-2xl shadow-black/50 mb-12 reveal-text border border-white/5">
+                <div class="grid lg:grid-cols-2 gap-0">
+                    <div class="p-8 lg:p-12 flex flex-col justify-center order-2 lg:order-1">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center border border-white/10">
+                                <i class="fa-solid fa-droplet text-white text-sm"></i>
+                            </div>
+                            <h4 class="font-display text-2xl text-white tracking-wider uppercase">Wash & Laundry</h4>
+                        </div>
+                        <div class="mb-6">
+                            <p class="text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3 font-semibold">Wig Wash Treatment</p>
+                            <div class="space-y-0">
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">8" - 12" Length</span>
+                                    <span class="font-display text-xl text-white">+R250</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">14" - 22" Length</span>
+                                    <span class="font-display text-xl text-white">+R300</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">24" - 30" Length</span>
+                                    <span class="font-display text-xl text-white">+R350</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-6">
+                            <p class="text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3 font-semibold">Wig Laundry</p>
+                            <div class="space-y-0">
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">Straight Texture</span>
+                                    <span class="font-display text-xl text-white">R200</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">Curly Texture</span>
+                                    <span class="font-display text-xl text-white">R250</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">Glueless Unit</span>
+                                    <span class="font-display text-xl text-white">R150</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-white/10">
+                            <a href="#contact" class="btn-shine inline-flex items-center gap-2 px-6 py-3 bg-white text-nb-black text-sm tracking-widest uppercase rounded-full hover:bg-white/90 transition-all duration-300">
+                                Book Wash Service <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden aspect-[4/5] lg:aspect-auto lg:min-h-[500px] order-1 lg:order-2">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Wig Wash Treatment" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-l from-transparent to-black/30"></div>
+                        <div class="absolute top-6 right-6">
+                            <span class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-xs tracking-widest uppercase text-white font-semibold">Deep Clean</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Customization -->
+            <div class="bg-nb-dark rounded-3xl overflow-hidden shadow-2xl shadow-black/50 reveal-text border border-white/5">
+                <div class="grid lg:grid-cols-2 gap-0">
+                    <div class="relative overflow-hidden aspect-[4/5] lg:aspect-auto lg:min-h-[600px]">
+                        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="Wig Customization" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/30"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-xs tracking-widest uppercase text-white font-semibold">Custom Work</span>
+                        </div>
+                    </div>
+                    <div class="p-8 lg:p-12 flex flex-col justify-center">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center border border-white/10">
+                                <i class="fa-solid fa-wand-sparkles text-white text-sm"></i>
+                            </div>
+                            <h4 class="font-display text-2xl text-white tracking-wider uppercase">Customization</h4>
+                        </div>
+                        <div class="mb-6">
+                            <p class="text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3 font-semibold">Wig Customization</p>
+                            <div class="space-y-0">
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">Bleaching & Plucking</span>
+                                    <span class="font-display text-xl text-white">R150</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">Frontal Bleach & Pluck</span>
+                                    <span class="font-display text-xl text-white">R200</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">Plucking Only</span>
+                                    <span class="font-display text-xl text-white">R100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-6 mb-6">
+                            <p class="text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3 font-semibold">Wig Lines</p>
+                            <div class="space-y-0">
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">Small Size</span>
+                                    <span class="font-display text-xl text-white">R150</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">Medium Size</span>
+                                    <span class="font-display text-xl text-white">R100</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">Large Size</span>
+                                    <span class="font-display text-xl text-white">R50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-6">
+                            <p class="text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3 font-semibold">Revival Treatment</p>
+                            <div class="space-y-0">
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">8" - 12" Length</span>
+                                    <span class="font-display text-xl text-white">+R300</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 border-b border-white/10 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">14" - 22" Length</span>
+                                    <span class="font-display text-xl text-white">+R350</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 px-3 hover:bg-white/5 transition-all rounded-lg">
+                                    <span class="text-white/70">24" - 30" Length</span>
+                                    <span class="font-display text-xl text-white">+R400</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-white/10">
+                            <a href="#contact" class="btn-shine inline-flex items-center gap-2 px-6 py-3 bg-white text-nb-black text-sm tracking-widest uppercase rounded-full hover:bg-white/90 transition-all duration-300">
+                                Book Customization <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center reveal-text">
+                <div class="bg-white/5 backdrop-blur-md border border-white/10 inline-flex items-center gap-3 px-8 py-4 rounded-full">
+                    <i class="fa-solid fa-circle-info text-white/50 text-sm"></i>
+                    <p class="text-white/50 text-sm">Prices may vary based on hair condition and specific requirements. Terms & Conditions apply.</p>
+                </div>
+            </div>
+        </div>
+    </section><!-- Dark Experience Section -->
+    <section id="experience" class="relative py-24 lg:py-32 mesh-dark overflow-hidden">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-gray-700 rounded-full filter blur-[100px] opacity-20 animate-blob"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-stone-700 rounded-full filter blur-[100px] opacity-15 animate-blob-slow"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative reveal-text">
+                    <div class="relative aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40 bg-black">
+                        <div class="video-card absolute inset-0">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NQFY4tV1y6s?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
+                    </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 z-10">
+                            <div class="glass-dark rounded-full px-4 py-2 inline-flex items-center gap-2 mb-3">
+                                <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                                <span class="text-xs text-white/80 tracking-wider uppercase">Live Process</span>
+                            </div>
+                            <p class="font-display text-2xl text-white">The Art of Installation</p>
+                        </div>
+                    </div>
+                    <div class="absolute -top-6 -left-6 w-24 h-24 border border-white/10 rounded-2xl"></div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 border border-white/10 rounded-full"></div>
+                </div>
+
+                <div class="reveal-text">
+                    <p class="font-script text-5xl gradient-text-light mb-4">The Experience</p>
+                    <h3 class="font-display text-3xl md:text-4xl text-white tracking-wider uppercase mb-6">Behind Every Install</h3>
+                    <div class="w-20 h-px bg-gradient-to-r from-white/40 to-transparent mb-8"></div>
+                    <p class="text-white/60 leading-relaxed mb-6 text-lg">
+                        Every installation is a masterpiece. From precise lace cutting to seamless blending, our process ensures your wig looks like it's growing from your scalp.
+                    </p>
+                    <p class="text-white/60 leading-relaxed mb-10">
+                        We use only premium products for washing and revival treatments, restoring life to every strand. Your investment deserves professional care.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass-card-dark rounded-xl p-5">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="text-white text-sm font-medium">Precision Lace</p>
+                            <p class="text-white/40 text-xs mt-1">Cutting & Fitting</p>
+                        </div>
+                        <div class="glass-card-dark rounded-xl p-5">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="text-white text-sm font-medium">Bleached Knots</p>
+                            <p class="text-white/40 text-xs mt-1">Natural Scalp Look</p>
+                        </div>
+                        <div class="glass-card-dark rounded-xl p-5">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="text-white text-sm font-medium">Hairline Pluck</p>
+                            <p class="text-white/40 text-xs mt-1">Undetectable Finish</p>
+                        </div>
+                        <div class="glass-card-dark rounded-xl p-5">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="text-white text-sm font-medium">Secure Hold</p>
+                            <p class="text-white/40 text-xs mt-1">Long-Lasting Wear</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <div id="portfolio"></div>
+    <section id="gallery" class="relative py-24 lg:py-32 bg-white overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_rgba(240,240,240,0.5)_0%,_transparent_50%)]"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 reveal-text">
+                <p class="font-script text-6xl md:text-7xl text-nb-black mb-4">Portfolio</p>
+                <h3 class="font-display text-2xl md:text-3xl text-nb-black tracking-widest uppercase">Transformations</h3>
+                <div class="w-24 h-px bg-gradient-to-r from-transparent via-nb-black to-transparent mx-auto mt-6"></div>
+                <p class="text-nb-stone mt-6 max-w-md mx-auto">A glimpse into our latest installations, styling, and hair transformations.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 stagger-children" id="gallery-grid">
+                <div class="img-zoom rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
+                    <img src="Assets/WhatsApp%20Image%202026-05-19%20at%2020.25.44.jpeg" 
+                         alt="Portfolio 1" class="w-full h-full object-cover transition-all duration-700 hover:grayscale" loading="lazy">
+                </div>
+                <div class="img-zoom rounded-2xl overflow-hidden aspect-[3/4] shadow-lg md:mt-8">
+                    <img src="Assets/WhatsApp%20Image%202026-05-19%20at%2020.25.46.jpeg" 
+                         alt="Portfolio 2" class="w-full h-full object-cover transition-all duration-700 hover:grayscale" loading="lazy">
+                </div>
+                <div class="img-zoom rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
+                    <img src="Assets/WhatsApp%20Image%202026-05-19%20at%2020.25.47%20(1).jpeg" 
+                         alt="Portfolio 3" class="w-full h-full object-cover transition-all duration-700 hover:grayscale" loading="lazy">
+                </div>
+                <div class="img-zoom rounded-2xl overflow-hidden aspect-[3/4] shadow-lg md:mt-8">
+                    <img src="Assets/WhatsApp%20Image%202026-05-19%20at%2020.25.47%20(2).jpeg" 
+                         alt="Portfolio 4" class="w-full h-full object-cover transition-all duration-700 hover:grayscale" loading="lazy">
+                </div>
+                <div class="img-zoom rounded-2xl overflow-hidden aspect-[3/4] shadow-lg md:mt-[-2rem]">
+                    <img src="Assets/WhatsApp%20Image%202026-05-19%20at%2020.25.47.jpeg" 
+                         alt="Portfolio 5" class="w-full h-full object-cover transition-all duration-700 hover:grayscale" loading="lazy">
+                </div>
+                <div class="img-zoom rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
+                    <img src="Assets/WhatsApp%20Image%202026-05-19%20at%2020.25.48.jpeg" 
+                         alt="Portfolio 6" class="w-full h-full object-cover transition-all duration-700 hover:grayscale" loading="lazy">
+                </div>
+                <div class="img-zoom rounded-2xl overflow-hidden aspect-[3/4] shadow-lg md:mt-[-2rem]">
+                    <img src="Assets/WhatsApp%20Image%202026-05-19%20at%2020.25.49.jpeg" 
+                         alt="Portfolio 7" class="w-full h-full object-cover transition-all duration-700 hover:grayscale" loading="lazy">
+                </div>
+                <div class="img-zoom rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
+                    <img src="Assets/Ndalo.jpeg" 
+                         alt="Portfolio 8" class="w-full h-full object-cover transition-all duration-700 hover:grayscale" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Hours Section -->
+    <section id="contact" class="relative py-24 lg:py-32 mesh-white overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-gray-100/30 to-transparent"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="reveal-text">
+                    <p class="font-script text-5xl text-nb-black mb-4">Visit Us</p>
+                    <h3 class="font-display text-3xl text-nb-black tracking-wider uppercase mb-8">Operating Hours</h3>
+                    <div class="w-20 h-px bg-gradient-to-r from-nb-black to-transparent mb-8"></div>
+
+                    <div class="glass rounded-2xl overflow-hidden shadow-lg">
+                        <div class="day-slot flex justify-between items-center py-4 px-6 border-b border-black/5">
+                            <span class="text-nb-stone tracking-widest uppercase text-sm font-medium">Monday</span>
+                            <span class="font-display text-nb-black">9AM - 6PM</span>
+                        </div>
+                        <div class="day-slot flex justify-between items-center py-4 px-6 border-b border-black/5">
+                            <span class="text-nb-stone tracking-widest uppercase text-sm font-medium">Tuesday</span>
+                            <span class="font-display text-nb-black">9AM - 6PM</span>
+                        </div>
+                        <div class="day-slot flex justify-between items-center py-4 px-6 border-b border-black/5">
+                            <span class="text-nb-stone tracking-widest uppercase text-sm font-medium">Wednesday</span>
+                            <span class="font-display text-nb-black">9AM - 6PM</span>
+                        </div>
+                        <div class="day-slot flex justify-between items-center py-4 px-6 border-b border-black/5">
+                            <span class="text-nb-stone tracking-widest uppercase text-sm font-medium">Thursday</span>
+                            <span class="font-display text-nb-black">9AM - 4PM</span>
+                        </div>
+                        <div class="day-slot flex justify-between items-center py-4 px-6 border-b border-black/5">
+                            <span class="text-nb-stone tracking-widest uppercase text-sm font-medium">Friday</span>
+                            <span class="font-display text-nb-black">9AM - 4PM</span>
+                        </div>
+                        <div class="day-slot flex justify-between items-center py-4 px-6 border-b border-black/5">
+                            <span class="text-nb-stone tracking-widest uppercase text-sm font-medium">Saturday</span>
+                            <span class="font-display text-nb-black">9AM - 5PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-4 px-6 bg-nb-black/5">
+                            <span class="text-nb-stone/60 tracking-widest uppercase text-sm font-medium">Sunday</span>
+                            <span class="font-display text-nb-stone/60">Closed</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="tel:+27602252652" class="glass rounded-xl p-5 flex items-center gap-4 hover:bg-white/80 transition-all duration-300 group">
+                            <div class="w-12 h-12 rounded-full bg-nb-black flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-phone text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs tracking-widest uppercase text-nb-stone">Phone</p>
+                                <p class="text-nb-black font-medium">+27 60 225 2652</p>
+                            </div>
+                        </a>
+                        <div class="glass rounded-xl p-5 flex flex-col items-start gap-3">
+                            <div class="w-12 h-12 rounded-full bg-nb-black/10 flex items-center justify-center">
+                                <i class="fa-solid fa-envelope text-nb-black text-sm"></i>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-xs tracking-widest uppercase text-nb-stone">Email</p>
+                                <p class="text-nb-black font-medium text-sm break-words">bookings@naturesbeautycorner.co.za</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-text">
+                    <p class="font-script text-5xl text-nb-black mb-4">Connect</p>
+                    <h3 class="font-display text-3xl text-nb-black tracking-wider uppercase mb-8">Book Appointment</h3>
+                    <div class="w-20 h-px bg-gradient-to-r from-nb-black to-transparent mb-8"></div>
+
+                    <form id="booking-form" class="glass rounded-3xl p-8 lg:p-10 shadow-xl space-y-5">
+                        <div>
+                            <label class="text-xs tracking-widest uppercase text-nb-stone mb-2 block">Your Name</label>
+                            <input type="text" placeholder="Full Name" class="w-full px-5 py-4 rounded-xl input-glass text-sm" required>
+                        </div>
+                        <div>
+                            <label class="text-xs tracking-widest uppercase text-nb-stone mb-2 block">Phone Number</label>
+                            <input type="tel" placeholder="+27 ..." class="w-full px-5 py-4 rounded-xl input-glass text-sm" required>
+                        </div>
+                        <div>
+                            <label class="text-xs tracking-widest uppercase text-nb-stone mb-2 block">Select Service</label>
+                            <select class="w-full px-5 py-4 rounded-xl input-glass text-sm text-nb-stone">
+                                <option value="">Choose a service...</option>
+                                <option value="install">Wig Installation</option>
+                                <option value="ponytail">Frontal Ponytail</option>
+                                <option value="wash">Wig Wash Treatment</option>
+                                <option value="laundry">Wig Laundry</option>
+                                <option value="custom">Customization</option>
+                                <option value="revival">Revival Treatment</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="text-xs tracking-widest uppercase text-nb-stone mb-2 block">Preferred Date</label>
+                                <input type="date" class="w-full px-5 py-4 rounded-xl input-glass text-sm" required>
+                            </div>
+                            <div>
+                                <label class="text-xs tracking-widest uppercase text-nb-stone mb-2 block">Preferred Time</label>
+                                <select class="w-full px-5 py-4 rounded-xl input-glass text-sm text-nb-stone" required>
+                                    <option value="">Select time...</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-xs tracking-widest uppercase text-nb-stone mb-2 block">Message</label>
+                            <textarea placeholder="Any special requests?" rows="3" class="w-full px-5 py-4 rounded-xl input-glass text-sm resize-none"></textarea>
+                        </div>
+                        <button id="booking-submit" type="submit" class="w-full py-4 bg-nb-black text-white text-sm tracking-widest uppercase font-medium rounded-xl hover:bg-nb-charcoal transition-all duration-300 btn-shine shadow-lg shadow-black/20">
+                            Send Booking Request
+                        </button>
+                        <p id="booking-message" class="hidden text-center text-sm font-medium"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-nb-black py-16 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-gray-800 rounded-full filter blur-[120px] opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-12 justify-items-center md:justify-items-stretch">
+                <!-- Column 1: Logo -->
+                <div class="flex flex-col items-center md:items-start max-w-xs md:max-w-none">
+                    <img src="Assets/Logo-Photoroom.png" alt="Nature's Beauty Corner Logo" class="w-40 h-32 mb-6 object-contain">
+                    <p class="text-white/60 text-sm leading-relaxed">Timeless Elegance, Naturally Yours. Premium wig services crafted with passion and expertise.</p>
+                </div>
+
+                <!-- Column 2: Services -->
+                <div class="ml-0 md:ml-6">
+                    <h4 class="font-display text-sm text-white tracking-widest uppercase mb-4">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-white/60 text-sm hover:text-white transition-colors">Wig Installation</a></li>
+                        <li><a href="#services" class="text-white/60 text-sm hover:text-white transition-colors">Frontal Ponytails</a></li>
+                        <li><a href="#services" class="text-white/60 text-sm hover:text-white transition-colors">Wig Wash</a></li>
+                        <li><a href="#services" class="text-white/60 text-sm hover:text-white transition-colors">Wig Laundry</a></li>
+                        <li><a href="#services" class="text-white/60 text-sm hover:text-white transition-colors">Customization</a></li>
+                        <li><a href="#services" class="text-white/60 text-sm hover:text-white transition-colors">Revival Treatment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Quick Links -->
+                <div>
+                    <h4 class="font-display text-sm text-white tracking-widest uppercase mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-white/60 text-sm hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#gallery" class="text-white/60 text-sm hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="#experience" class="text-white/60 text-sm hover:text-white transition-colors">Experience</a></li>
+                        <li><a href="#contact" class="text-white/60 text-sm hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div>
+                    <h4 class="font-display text-sm text-white tracking-widest uppercase mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <p class="text-xs tracking-widest uppercase text-nb-stone mb-1">Address</p>
+                            <p class="text-white/60 text-sm">Glenwood Devenport</p>
+                        </li>
+                        <li>
+                            <p class="text-xs tracking-widest uppercase text-nb-stone mb-1">Phone</p>
+                            <a href="tel:+27602252652" class="text-white/60 text-sm hover:text-white transition-colors">+27 60 225 2652</a>
+                        </li>
+                    </ul>
+                    <div class="flex justify-center md:justify-start gap-3 mt-6">
+                        <a href="https://www.instagram.com/naturesbeauty_corner?igsh=MXBiZ29odHNhY3JrdA==" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@naturesbeauty_cor?_r=1&_t=ZS-96VwVs6rQaz" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all">
+                            <i class="fa-brands fa-tiktok text-sm"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-8 text-center">
+                <p class="text-white/20 text-xs tracking-wider">© 2026 Nature's Beauty Corner. All rights reserved.</p>
+                <p class="text-white/40 text-xs tracking-wider mt-2">Designed and developed with <i class="fa-solid fa-heart text-white"></i> <a href="https://oceans88labs.co.za/" target="_blank" class="text-white/60 hover:text-white transition-colors no-underline">Oceans88labs</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>        
+</body>
+</html>
